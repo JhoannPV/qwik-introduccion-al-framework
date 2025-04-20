@@ -1,4 +1,4 @@
-import { $, component$, useComputed$, useSignal, useStore, useStylesScoped$ } from '@builder.io/qwik';
+import { $, component$, useComputed$, useStore, useStylesScoped$ } from '@builder.io/qwik';
 
 import styles from './login.css?inline';
 
@@ -37,7 +37,7 @@ export default component$(() => {
     const onInput = $((ev: InputEvent, field: Field) => {
         if (field === 'email') {
             formState.email = (ev.target as HTMLInputElement).value;
-        } else if (field === 'password') {
+        } else {
             formState.password = (ev.target as HTMLInputElement).value;
         }
 
