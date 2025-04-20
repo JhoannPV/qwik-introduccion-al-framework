@@ -1,0 +1,44 @@
+@import 'tailwindcss';
+
+.wrapper {
+  @apply flex items-center justify-between w-full max-w-[1200px] mx-auto px-4;
+}
+
+.logo {
+  @apply inline-block;
+}
+
+.logo a {
+  @apply block;
+}
+
+.header {
+  @apply py-2.5 w-full;
+  background-color: var(--qwik-dark-background);
+}
+
+.header ul {
+  @apply m-0 p-0 list-none flex gap-8;
+}
+
+.header li {
+  @apply m-0 p-0 text-[0.9rem];
+}
+
+.header li a {
+  @apply text-white inline-block p-0 no-underline font-medium;
+}
+
+.header li a:hover {
+  @apply text-[var(--qwik-light-blue)];
+}
+
+@media (max-width: 450px) {
+  .wrapper {
+    @apply flex-col gap-4;
+  }
+
+  .header ul {
+    @apply justify-center;
+  }
+}
